@@ -19,12 +19,12 @@ This approach allows for centralized management of my dotfiles while keeping the
 1.  **Run the Installer:**
 
     ```bash
-    curl -s [https://raw.githubusercontent.com/nobler1050/dotfiles/refs/heads/main/dotfiles.sh](https://raw.githubusercontent.com/nobler1050/dotfiles/refs/heads/main/dotfiles.sh) | bash
+    curl -s https://raw.githubusercontent.com/nobler1050/dotfiles/main/dotfiles.sh | bash
     ```
 
     * This command will download and execute the `dotfiles.sh` script, which will download the dotfiles from the Gists defined within the script and create the necessary soft links.
 
-2.  **Editing and Updating:**
+3.  **Editing and Updating:**
 
     * To edit a dotfile, simply modify the corresponding file within the `~/.dotfiles` repository.
     * To push changes back to the Gists:
