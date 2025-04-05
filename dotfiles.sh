@@ -5,6 +5,7 @@
 # --- Configuration ---
 VIM_GIST_URL="git@gist.github.com:aa74a563d2c0f67fef9a437b413ada2b.git"
 TMUX_GIST_URL="git@gist.github.com:0b9581e8ccc3fef4ec50.git"
+ALIASES_VPN_GIST_URL="git@gist.github.com:8ad5e69faf6458a86f7cb7a49e52b076.git"
 DOTFILES_DIR="$HOME/git/.dotfiles"
 
 # --- Functions ---
@@ -61,10 +62,12 @@ create_dotfiles_dir
 # Clone Gist(s)
 clone_gist "$VIM_GIST_URL" "$DOTFILES_DIR/vim"
 clone_gist "$TMUX_GIST_URL" "$DOTFILES_DIR/tmux"
+clone_gist "ALIASES_VPN_GIST_URL" "$DOTFILES_DIR/aliases_vpn"
 
 # Create symbolic links
 create_symlinks "$DOTFILES_DIR/vim/.vimrc" "$HOME/.vimrc"
 create_symlinks "$DOTFILES_DIR/tmux/.tmux.conf" "$HOME/.tmux.conf"
+create_symlinks "$DOTFILES_DIR/aliases_vpn/aliases_vpn" "$HOME/.bashrc.d/aliases_vpn"
 
 echo "Dotfiles installation complete!"
 echo "If you made changes to your .tmux.conf file, run: tmux source-file ~/.tmux.conf"
