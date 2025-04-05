@@ -62,7 +62,7 @@ create_dotfiles_dir
 # Clone Gist(s)
 clone_gist "$VIM_GIST_URL" "$DOTFILES_DIR/vim"
 clone_gist "$TMUX_GIST_URL" "$DOTFILES_DIR/tmux"
-clone_gist "ALIASES_VPN_GIST_URL" "$DOTFILES_DIR/aliases_vpn"
+clone_gist "$ALIASES_VPN_GIST_URL" "$DOTFILES_DIR/aliases_vpn"
 
 # Create symbolic links
 create_symlinks "$DOTFILES_DIR/vim/.vimrc" "$HOME/.vimrc"
